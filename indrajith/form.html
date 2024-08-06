@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="">
+    <table align="center" border="4" width="500px" height="50px" cellpadding="2">
+        <caption><b>Student Details</b></caption>
+        <tr>
+            <th>Name*</th>
+            <td colspan="4"><input type="text" name="fname" id="fname" size="100%" maxlength="20" autofocus required autocomplete="on"/></td>
+        </tr>
+        <tr>
+            <th>Hidden</th>
+            <td colspan="4"><input type="hidden"></td>
+        </tr>
+        <tr>
+            <th>Hobbies</th>
+            <td><label><input type="checkbox" name="groceries" value="milk" checked="checked"/>Reading</label></td>
+            <td><label><input type="checkbox" name="groceries" value="bread" /> Music</label></td>
+            <td><label><input type="checkbox" name="groceries" value="eggs" />Dance</label></td>
+            <td><label><input type="checkbox" name="groceries" value="cheese" />Writing</label></td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td colspan="2"><label><input type="radio" name="gender"/>Male</label></td>
+            <td colspan="2"><label><input type="radio" name="gender"/>Female</label></td>
+        </tr>
+        <tr>
+            <th>Groceries</th>
+            <td>
+            <label>
+                <select name="groceries" size="2" multiple>
+                    <option>Milk</option>
+                    <option>Bread</option>
+                    <option>Eggs</option>
+                    <option>Cheese</option>
+                </select>
+            </label>
+        </td>
+        <th align="center">Color : </th>
+        <td colspan="4"><input type="color" ></td>
+        </tr>
+        <tr>
+            <th >Address</th>
+            <td colspan="4">
+                <textarea name="" id="" rows="5" cols="97" wrap="hard" placeholder="Enter your address here" autocomplete="on"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td colspan="4"><input type="tel" size="100%" ></td>
+        </tr>
+        <tr>
+            <th>Upload Id</th>
+            <td colspan="4" align="center"><input type="file" size="100%"></td>
+        </tr>
+
+        <tr align="center">
+            <td></td>
+            <td colspan="2">
+                <input type="submit" name="submit" value="Submit">
+            </td>
+            <td colspan="2">
+                <input type="reset" name="Reset" value="Clear">
+            </td>
+        </tr>
+        <tr align="center">
+            <td></td>
+            <td colspan="4">
+            <input type="button" name="button" value="MyButton">
+        </td>
+        </tr>
+    </table>
+    </form>
+</body>
+
+</html>
