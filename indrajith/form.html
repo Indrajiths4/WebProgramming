@@ -10,7 +10,10 @@
 <body>
     <form action="">
     <table align="center" border="4" width="500px" height="50px" cellpadding="2">
-        <caption><b>Student Details</b></caption>
+        <caption><b><h3>Student Details</h3></b></caption>
+        <tr>
+            <td colspan="5" align="center"><img src="images/user.jpeg" alt="Image" width="130px" height="115px"></td>
+        </tr>
         <tr>
             <th>Name*</th>
             <td colspan="4"><input type="text" name="fname" id="fname" size="100%" maxlength="20" autofocus required autocomplete="on"/></td>
@@ -30,6 +33,19 @@
             <th>Gender</th>
             <td colspan="2"><label><input type="radio" name="gender"/>Male</label></td>
             <td colspan="2"><label><input type="radio" name="gender"/>Female</label></td>
+        </tr>
+        <tr>
+            <th>Birth Month</th>
+            <td colspan="4">
+                <input type="text" id="txtlist" placeholder="Select a month" list="months" size="100%"/>
+                <datalist id="months">
+                    <option value="January">
+                    <option value="February">
+                    <option value="March">
+                    <option value="April">
+                    <option value="May">
+                </datalist>
+            </td>
         </tr>
         <tr>
             <th>Groceries</th>
@@ -57,6 +73,10 @@
             <td colspan="4"><input type="tel" size="100%" ></td>
         </tr>
         <tr>
+            <th>Password</th>
+            <td colspan="4" ><input type="password" size="100%"></td>
+        </tr>
+        <tr>
             <th>Upload Id</th>
             <td colspan="4" align="center"><input type="file" size="100%"></td>
         </tr>
@@ -70,14 +90,9 @@
                 <input type="reset" name="Reset" value="Clear">
             </td>
         </tr>
-        <tr align="center">
-            <td></td>
-            <td colspan="4">
-            <input type="button" name="button" value="MyButton">
-        </td>
-        </tr>
     </table>
     </form>
+    <a href="pagestructure.html">Go to Page Structure</a>
 </body>
 
 </html>
