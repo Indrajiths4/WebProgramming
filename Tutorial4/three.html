@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <form autocomplete="on">
+        
+            <h2>Employee Details</h2>    
+            <label for="id">Id:</label>
+            <input type="text" id="id" name="id" required placeholder="Enter employee ID" autocomplete="off"><br><br>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter full name" autocomplete="name"><br><br>
+            
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br><br>
+            
+            <label for="designation">Designation:</label>
+            <select id="designation" name="designation" required autocomplete="organization-title">
+                <option value="">Select designation</option>
+                <option value="manager">Manager</option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="analyst">Analyst</option>
+            </select><br><br>
+            
+            <label for="salary">Salary:</label>
+            <input type="number" id="salary" name="salary" required placeholder="Enter salary amount" autocomplete="off"><br><br>
+            
+            <input type="submit" value="Submit">
+        
+    </form>
+    <br>
+    <br>
+    <a href="index.html">Go back</a>
+</body>
+</html>
