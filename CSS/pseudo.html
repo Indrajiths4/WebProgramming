@@ -49,8 +49,17 @@
         }
         #letter {
             letter-spacing: 10px;
-            line-height: 20px;
-        } 
+            line-height: 30px;
+        }
+        ol {
+            list-style-type: lower-alpha;
+        }
+        ol ol {
+            list-style-type: lower-greek;
+        }
+        ol ol ol {
+            list-style-type: lower-roman;
+        }
     </style>
 </head>
 <body>
@@ -60,6 +69,24 @@
     <div>
         <a href="http://www.google.com" class="hyper">Google</a>
     </div>
-    <p id="letter">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, voluptatum rerum cupiditate impedit sed perferendis. Explicabo molestiae, hic saepe, quidem amet qui exercitationem molestias quasi officiis, ducimus tempora! Odio, dignissimos!</p>
+    <p id="letter">Lorem ipsum dolor sit amet consectetur,fghfghfghfghfgh adipisicing elit. Culpa, voluptatum rerum cupiditate impedit sed perferendis. Explicabo molestiae, hic saepe, quidem amet qui exercitationem molestias quasi officiis, ducimus tempora! Odio, dignissimos!</p>
+    <ol>
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Cheese</li>
+        <li>Butter</li>
+        <ol>
+            <li>Butter</li>
+            <li>Butter</li>
+            <li>Butter</li>
+            <li>Butter</li>
+            <ol>
+                <li>Butter</li>
+                <li>Butter</li>
+                <li>Butter</li>
+                <li>Butter</li>
+            </ol>
+        </ol>
+    </ol>
 </body>
 </html>
