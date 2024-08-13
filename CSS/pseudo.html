@@ -5,17 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo</title>
     <style>
-        .input:hover {
+        form {
+            margin: 50px;
+        }
+        input:hover {
             background-color: red;
+            border-top: dotted;
         }
-        .input:focus {
+        input:focus {
             background-color: green;
+            border-color: yellow;
         }
+        .hyper {
+            text-decoration: line-through;
+            font-size: 50px;
+            font-style: italic;
+            font-variant: small-caps;
+            transition: 1s;
+        }
+        .hyper:link {
+            color:red;
+        }
+        .hyper:visited {
+            color:green;
+        }
+        .hyper:hover {
+            color:rgb(255, 105, 180);
+            font-size: 100px;
+        }
+        .hyper:active {
+            color:blue;
+        }
+        p#input {
+            text-transform: capitalize;
+            text-decoration: line-through;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        div {
+            border: 2px solid black;
+            padding: 5px;
+            border-style:dotted;
+            text-align: center;
+        }
+        #letter {
+            letter-spacing: 10px;
+            line-height: 20px;
+        } 
     </style>
 </head>
 <body>
     <form>
-        <p>Your name : <input type="text" class="input"></p>
+        <p id="input">Your name : <input type="text"></p>
     </form>
+    <div>
+        <a href="http://www.google.com" class="hyper">Google</a>
+    </div>
+    <p id="letter">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, voluptatum rerum cupiditate impedit sed perferendis. Explicabo molestiae, hic saepe, quidem amet qui exercitationem molestias quasi officiis, ducimus tempora! Odio, dignissimos!</p>
 </body>
 </html>
