@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo</title>
     <style>
+        body {
+            background-image: url(../images/img.png);
+            background-position: 50px;
+        }
         form {
             margin: 50px;
         }
+
         input:hover {
             background-color: red;
             border-top: dotted;
         }
+
         input:focus {
-            background-color: green;
+            background-color: transparent;
             border-color: yellow;
         }
+
         .hyper {
             text-decoration: line-through;
             font-size: 50px;
@@ -23,45 +31,67 @@
             font-variant: small-caps;
             transition: 1s;
         }
+
         .hyper:link {
-            color:red;
+            color: red;
         }
+
         .hyper:visited {
-            color:green;
+            color: green;
         }
+
         .hyper:hover {
-            color:rgb(255, 105, 180);
+            color: rgb(255, 105, 180);
             font-size: 100px;
         }
+
         .hyper:active {
-            color:blue;
+            color: blue;
         }
+
         p#input {
             text-transform: capitalize;
             text-decoration: line-through;
             font-family: 'Times New Roman', Times, serif;
         }
+
         div {
             border: 2px solid black;
             padding: 5px;
-            border-style:dotted;
+            border-style: dotted;
             text-align: center;
         }
+
         #letter {
             letter-spacing: 10px;
             line-height: 30px;
         }
+
         ol {
             list-style-type: lower-alpha;
         }
+
         ol ol {
             list-style-type: lower-greek;
         }
+
         ol ol ol {
             list-style-type: lower-roman;
         }
+
+        #float1 {
+            font-size: large;
+            text-align: justify;
+            margin-right: 40px;
+            text-indent: 60px;
+        }
+
+        img {
+            float: right;
+        }
     </style>
 </head>
+
 <body>
     <form>
         <p id="input">Your name : <input type="text"></p>
@@ -69,7 +99,9 @@
     <div>
         <a href="http://www.google.com" class="hyper">Google</a>
     </div>
-    <p id="letter">Lorem ipsum dolor sit amet consectetur,fghfghfghfghfgh adipisicing elit. Culpa, voluptatum rerum cupiditate impedit sed perferendis. Explicabo molestiae, hic saepe, quidem amet qui exercitationem molestias quasi officiis, ducimus tempora! Odio, dignissimos!</p>
+    <p id="letter">Lorem ipsum dolor sit amet consectetur fghfghfghfghfgh adipisicing elit. Culpa, voluptatum rerum
+        cupiditate impedit sed perferendis. Explicabo molestiae, hic saepe, quidem amet qui exercitationem molestias
+        quasi officiis, ducimus tempora! Odio, dignissimos!</p>
     <ol>
         <li>Milk</li>
         <li>Bread</li>
@@ -88,5 +120,26 @@
             </ol>
         </ol>
     </ol>
+    <img src="../images/img.png" alt="">
+    <p id="float1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia eius, nulla sint nisi accusamus
+        molestias eos,
+        molestiae amet ab nemo eveniet at! At minima autem dolore, dignissimos nemo exercitationem rem!Lorem Lorem ipsum
+        dolor sit amet
+        consectetur, adipisicing elit. Eaque, neque corporis autem odit nihil officiis quisquam tempore voluptatibus
+        ipsa amet voluptatem,
+        repellat voluptate nostrum a vero deleniti necessitatibus aspernatur enim! Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit.
+        Accusantium, aspernatur nemo aperiam consequuntur expedita sequi illum fugiat, temporibus illo dignissimos
+        repellendus animi eum non
+        magni, rerum aliquid quam deserunt dolore? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
+        voluptatibus laborum beatae
+        tempore sunt. Et odit repellendus quidem quos provident. Ut sequi amet suscipit inventore cumque veniam quaerat?
+        Debitis, vitae? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ab veniam aperiam dolorum quia repellat
+        dolores officia voluptatum
+        hic magni, esse similique, aliquam blanditiis quaerat quasi, impedit sed tempore placeat. lorem
+    </p>
+
 </body>
+
 </html>
