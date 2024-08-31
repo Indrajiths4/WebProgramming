@@ -31,6 +31,7 @@
         // console.log(str.substring(2,5));
         // console.log(str.charAt(4));
 
+
         //If statement
         // var x = prompt("Enter number : ");
         // if (x<0) {
@@ -39,6 +40,7 @@
         // else {
         //     alert('positive')
         // }
+
 
         //Conditional operator
         // var name;
@@ -57,6 +59,7 @@
         // }
         // document.writeln("<h1>"+greet+" "+name+", Welcome to js programming!","</h1>");
 
+
         //Switch
         // var day= new Date().getDay()
         // switch(day) {
@@ -73,6 +76,7 @@
         // }
         // alert(text);
 
+
         //For loop
         // var sum=0;
         // for(var num=0;num<=100;num+=2) {
@@ -80,12 +84,14 @@
         // }
         // alert(sum);
 
+
         //For loop indexing
         // var x;
         // var cars=["Maruthi","Toyota"];
         // for(x in cars) {
         //     alert(x+"="+cars[x]);
         // }
+
 
         //Exercise
         // var n;
@@ -99,6 +105,7 @@
         //confirm
         // confirm("Hello")
 
+
         //Not a number
         // function printme() {
         //     var notANumber="i am not a number";
@@ -106,6 +113,7 @@
         //     alert("Is NaN : "+isNaN(notANumber))
         //     alert("Is NaN : "+isNaN(numericvalue))
         // }
+
 
         //Arrays
         // var colors=["red","green","blue"];
@@ -115,11 +123,19 @@
         // alert(s[0]);
         // console.log(s[0]);
 
-        // var n=[10,20,30,40,50];
-        // alert(n.length);
-        // alert(n);
-
-        
+        var n=[10,20,30,40,50];
+        n.push(60);
+        var i;
+        console.log("Array Elements : ")
+        for(i=0;i<n.length;i+=1) {
+            console.log(n[i]);
+        }
+        var x=n.pop();
+        console.log("Array Elements after popping : ")
+        for(i=0;i<n.length;i+=1) {
+            console.log(n[i]);
+        }
+        console.log("Popped element : ",x);
         
     </script>
 </body>
