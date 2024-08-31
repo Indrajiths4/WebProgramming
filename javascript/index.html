@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+
+    <input type="button" value="Print me" onclick="printme()"/>
     <script type="text/javascript">
         // var today=new Date();
         // alert(today);
@@ -85,7 +87,22 @@
         //     alert(x+"="+cars[x]);
         // }
 
+        // var n;
+        // document.writeln("<table border=border>");
+        // document.writeln("<tr><td>N</td><td>N*10</td><td>N*100</td><td>N*1000</td></tr>");
+        // for(n=1;n<=6;n+=1) {
+        // document.writeln("<tr><td>",n,"</td><td>",n*10,"</td><td>",n*100,"</td><td>",n*1000,"</td></tr>");
+        // }
+        // document.writeln("</table>");
         
+        // confirm("Hello")
+
+        function printme() {
+            var notANumber="i am not a number";
+            var numericvalue = 42;
+            alert("Is NaN : "+isNaN(notANumber))
+            alert("Is NaN : "+isNaN(numericvalue))
+        }
     </script>
 </body>
 </html>
