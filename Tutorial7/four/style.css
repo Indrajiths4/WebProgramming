@@ -1,0 +1,12 @@
+p.style1 {
+    color: blue;
+    text-align: right;
+    text-decoration: underline;
+    font-style: italic;
+    word-spacing: 2cm;
+}
+p.style2 {
+    background-color: yellow;
+    border: 2px dashed blue;
+    padding: 1.5cm;
+}

@@ -1,0 +1,13 @@
+a:hover, a:active {
+    background-color: yellow;
+}
+ol {
+    list-style-type: lower-alpha;
+}
+body {
+    background-image: url('boat.jpg');
+    margin: 3%;
+}
+body {
+    border: 2px dotted black;
+}
