@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calculateGrossPay() {
+        let employees = [];
+
+        while (employees.length < 3) {
+          let name = prompt(
+            `Enter the name of employee ${employees.length + 1}:`
+          );
+          let hours = parseInt(
+            prompt(`Enter the number of hours worked by ${name}:`)
+          );
+          let rate = parseFloat(prompt(`Enter the hourly rate of ${name}:`));
+
+          employees.push({
+            name: name,
+            hours: hours,
+            rate: rate,
+            grossPay: (hours * rate).toFixed(2),
+          });
+        }
+
+        let employeeHTML = "";
+        for (let i = 0; i < employees.length; i++) {
+          employeeHTML += `<p>Name: ${employees[i].name}, Hours Worked: ${employees[i].hours}, Hourly Rate: $${employees[i].rate}, Gross Pay: $${employees[i].grossPay}</p>`;
+        }
+
+        document.body.innerHTML = employeeHTML;
+      }
+
+      calculateGrossPay();
+    </script>
+  </body>
+</html>

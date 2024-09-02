@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function checkPalindrome() {
+        let input = prompt(
+          "Enter a 5-digit number to check if it's a palindrome:"
+        );
+
+        if (input.length !== 5 || isNaN(input)) {
+          alert("Please enter a valid 5-digit number.");
+          checkPalindrome();
+        } else {
+          let original = input;
+          let reversed = input.split("").reverse().join("");
+
+          if (original === reversed) {
+            alert(`${original} is a palindrome.`);
+          } else {
+            alert(`${original} is not a palindrome.`);
+          }
+        }
+      }
+
+      checkPalindrome();
+    </script>
+  </body>
+</html>
