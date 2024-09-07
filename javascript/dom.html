@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <img src="sjc.png" alt="SJCET pic" id="sjc">
+    <br><br>
+    <input type="submit" value="Change" onclick="changeimage()" style="width:100px; height:30px; ">
+    <br><br>
+    <p id="color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi similique porro voluptas beatae libero, architecto laborum ab dolore incidunt tempora inventore accusantium voluptatum repellendus sapiente soluta impedit, deleniti obcaecati vel.
+    </p>
+    <br><br>
+    <hl onclick="this.innerHTML ='Ooops!'">My Page</hl>
+    <br /><br />
+    <a href="" onmouseover="window.alert( 'Hello'); ">My Event link</a>
+    <script>
+        function changeimage(){
+            document.getElementById('sjc').src="sjcet.jpeg";
+            document.getElementById('color').style.color='blue';
+            document.getElementById('color').style.fontStyle='italic';
+        }
+    </script>
+
+</body>
+</html>
