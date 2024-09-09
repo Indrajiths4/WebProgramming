@@ -6,7 +6,7 @@
     <title>DOM</title>
 </head>
 <body>
-    <img src="sjc.png" alt="SJCET pic" id="sjc">
+    <!-- <img src="sjc.png" alt="SJCET pic" id="sjc">
     <br><br>
     <input type="submit" value="Change" onclick="changeimage()" style="width:100px; height:30px; ">
     <br><br>
@@ -15,14 +15,49 @@
     <br><br>
     <hl onclick="this.innerHTML ='Ooops!'">My Page</hl>
     <br /><br />
-    <a href="" onmouseover="window.alert( 'Hello'); ">My Event link</a>
+    <a href="jsfunction.html" onMouseover="window.alert( 'Hello');" onMouseout="window.alert( 'world');">My Event link</a>
+    <br><br>
+    <form action="" onsubmit="return changeimage()">
+        <label for="name">NAme : 
+        </label>
+        <input type="text" id="name"/>
+        <input type="submit" value="Change" style="width:100px; height:22px; ">
+    </form>
+    <form action="">
+        <label for="">Phone number : </label>
+        <input type="text" id="phone">
+        <input type="button" onclick="validatephone()" value="validate">
+    </form>
     <script>
         function changeimage(){
             document.getElementById('sjc').src="sjcet.jpeg";
             document.getElementById('color').style.color='blue';
             document.getElementById('color').style.fontStyle='italic';
+            var name=document.getElementById('name').value;
+            alert('Hello'+name);
+            return;
         }
-    </script>
+        function validatephone() {
+            var phone = document.getElementById('phone').value;
+            if (isNaN(parseInt(phone))==true) {
+                alert('Empty phone number')
+            }
+            
+        }
+    </script> -->
 
+
+    <h2>Node Creation in Js</h2>
+    <div id="div1">
+        <p>This is first p tag</p>
+        <p>This is second p tag</p>
+    </div>
+    <script>
+        const para=document.createElement("p");
+        const node=document.createTextNode("This is created p node");
+        para.appendChild(node);
+        const element=document.getElementById("div1");
+        element.appendChild(para);
+    </script>
 </body>
 </html>
