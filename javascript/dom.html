@@ -62,7 +62,7 @@
         }
     </script> -->
 
-    <form action="">
+    <!-- <form action="">
         <fieldset>
             <legend>Links-Collection_Length</legend>&nbsp;&nbsp;&nbsp;
             <a id="a1" href="https://www.google.com">Google</a>&nbsp;&nbsp;&nbsp;
@@ -82,6 +82,33 @@
                 display.textContent+=document.links[i].href+"\n";
             }
         }
+    </script> -->
+
+    <!-- Callback function-->
+     <!-- <div id="output1"></div>
+     <div id="output2"></div>
+    <script>
+        function greet(name,callback) {
+            document.getElementById("output1").innerHTML="Hello"+name+"!<br>";
+            setTimeout(callback, 4000);
+        }
+        function sayGoodbye() {
+            document.getElementById("output2").innerHTML="Goodbye<br>"
+        }
+        greet("John",sayGoodbye);
+        const add=(a,b) => {
+            return a+b;
+        }
+        alert(add(1,2));
+    </script> -->
+
+    <script>
+        const add = (a,b) => a+b;
+        var number1 = prompt("Enter number 1 : ");
+        var number2 = prompt("Enter number 2 : ");
+        const sum=add(parseInt(number1),parseInt(number2))
+        alert(`The sum of ${number1} and ${number2} is ${sum}`);
     </script>
+
 </body>
 </html>
