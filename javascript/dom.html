@@ -47,17 +47,41 @@
     </script> -->
 
 
-    <h2>Node Creation in Js</h2>
+    <!-- <h2>Node Creation in Js</h2>
     <div id="div1">
         <p>This is first p tag</p>
-        <p>This is second p tag</p>
+        <p id="p1">This is second p tag</p>
+        <input type="submit" value="remove" onclick="removetag()">
     </div>
     <script>
-        const para=document.createElement("p");
-        const node=document.createTextNode("This is created p node");
-        para.appendChild(node);
-        const element=document.getElementById("div1");
-        element.appendChild(para);
+        function removetag() {
+            const para = document.createElement("p");
+            const content = document.createTextNode("This is new para");
+            para.appendChild(content);
+            document.getElementById("div1").replaceChild(para,document.getElementById("p1"));
+        }
+    </script> -->
+
+    <form action="">
+        <fieldset>
+            <legend>Links-Collection_Length</legend>&nbsp;&nbsp;&nbsp;
+            <a id="a1" href="https://www.google.com">Google</a>&nbsp;&nbsp;&nbsp;
+            <a href="https://www.bing.com">EBay</a>&nbsp;&nbsp;&nbsp;
+            <a href="https://www.ebay.com">Bing</a>&nbsp;&nbsp;&nbsp;
+            
+            <br><br>
+            <input type="button" value="get Links" onclick="getlinks()">
+            <div id="display"></div>
+        </fieldset>
+    </form>
+    <script>
+        function getlinks() {
+            var links=document.links.length;
+            display.textContent='Total Links : '+links+'<br>';
+            for(var i=0;i<links;i++) {
+                display.textContent+=document.links[i].href+"\n";
+            }
+        }
     </script>
 </body>
 </html>
